@@ -1,0 +1,6 @@
+r
+loadbin build\TESTUSB1.bin, 0x00
+verifybin build\TESTUSB1.bin, 0x00
+r
+g
+q

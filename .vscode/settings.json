@@ -1,0 +1,8 @@
+{
+	"cortex-debug.enableTelemetry": false,
+	"cortex-debug.JLinkGDBServerPath": "C:/Software/JLink/JLinkGDBServerCL.exe",
+	"files.associations": {
+		"stm32f1xx_hal.h": "c",
+		"usb_device.h": "c"
+	}
+}
