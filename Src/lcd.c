@@ -37,7 +37,6 @@ void LCD_SendData(uint8_t dt){
     
     E_SET();
     LCD_Delay();
-    HAL_Delay(1);
     E_RES();
 }
 
@@ -67,8 +66,7 @@ void LCD_SendString(uint8_t StrNum, char* str){
     
     while(str[i] != 0){
         LCD_SendData(str[i]);
-        //LCD_Delay();
-        HAL_Delay(10);
+        HAL_Delay(1);
         i++;
     }
 }

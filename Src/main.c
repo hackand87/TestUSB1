@@ -69,7 +69,8 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
   char str_tx[21];
-  //char str2[] = "Privet!!";
+  char str[] = "Hello World!!";
+  char str2[] = "1234567812345678";
   /* USER CODE END 1 */
   
 
@@ -106,11 +107,14 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    CDC_Transmit_FS((uint8_t*) str_tx, strlen(str_tx));
+    CDC_Transmit_FS((uint8_t*) str_tx, strlen(str_tx)); 
 
-    LCD_SendString(1, str_rx);
+    LCD_SendString(0, str_rx);
+    LCD_SendString(0, str);
+    LCD_SendString(1, str2);
 
     HAL_Delay(500);
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
