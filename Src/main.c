@@ -69,6 +69,7 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
   char str_tx[21];
+  //char str2[] = "Privet!!";
   /* USER CODE END 1 */
   
 
@@ -92,6 +93,11 @@ int main(void)
   MX_GPIO_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
+  HAL_Delay(50);
+  LCD_Init();
+
+  //LCD_SendString(1, str2);
+  
   sprintf(str_tx, "USB Transmit\r\n");
   /* USER CODE END 2 */
  
@@ -101,6 +107,9 @@ int main(void)
   {
     /* USER CODE END WHILE */
     CDC_Transmit_FS((uint8_t*) str_tx, strlen(str_tx));
+
+    LCD_SendString(1, str_rx);
+
     HAL_Delay(500);
     /* USER CODE BEGIN 3 */
   }
