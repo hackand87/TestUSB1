@@ -45,15 +45,15 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-  uint8_t i=0;
-  char str_rx[21];
+ 
+ // char str_rx[16];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 /* USER CODE BEGIN PFP */
-uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len);
+//uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -68,9 +68,10 @@ uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-  char str_tx[21];
-  char str[] = "Hello World!!";
-  char str2[] = "1234567812345678";
+  uint32_t i=0;
+  //char str_tx[21];
+  char str[] = "Perebor symbols:";
+  //char str2[] = "1234567812345678";
   /* USER CODE END 1 */
   
 
@@ -96,24 +97,42 @@ int main(void)
   /* USER CODE BEGIN 2 */
   HAL_Delay(50);
   LCD_Init();
-
-  //LCD_SendString(1, str2);
+  //LCD_SetPos(0, 0);
+  LCD_SendString(str);
   
-  sprintf(str_tx, "USB Transmit\r\n");
+  //LCD_SetPos(0, 1);
+  
+  //LCD_SendData(50);
+  
+  //sprintf(str_tx, "USB Transmit\r\n");
+ // LCD_Clear();
   /* USER CODE END 2 */
  
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    //uint32_t i=0;
     /* USER CODE END WHILE */
-    CDC_Transmit_FS((uint8_t*) str_tx, strlen(str_tx)); 
+    //CDC_Transmit_FS((uint8_t*) str_tx, strlen(str_tx)); 
+    //HAL_Delay(500);
+    //LCD_SendString(str_rx);
+    //for(i=1; i<((uint8_t)(16-strlen(str_rx))); i++) LCD_SendChar(' ');
+    //HAL_Delay(50);
+    LCD_SetPos(5, 1);
+    LCD_SendChar((char)(i));
+    LCD_SetPos(8, 1);
+    LCD_SendData(i);
+    
+    //LCD_SendChar((char)((i/10)%10)+0x30);
+    //LCD_SendChar((char)(i%10)+0x30);
+     HAL_Delay(200);
+    i++;
+    
+    //LCD_SendString(0, str);
+    //LCD_SendString(1, str2);
 
-    LCD_SendString(0, str_rx);
-    LCD_SendString(0, str);
-    LCD_SendString(1, str2);
-
-    HAL_Delay(500);
+    //HAL_Delay(500);
 
     /* USER CODE BEGIN 3 */
   }

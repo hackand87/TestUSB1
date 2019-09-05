@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 1
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 1
   31:Src/usbd_cdc_if.c **** /* Private macro -------------------------------------------------------------*/
   32:Src/usbd_cdc_if.c **** 
   33:Src/usbd_cdc_if.c **** /* USER CODE BEGIN PV */
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 2
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s 			page 2
 
 
   34:Src/usbd_cdc_if.c **** /* Private variables ---------------------------------------------------------*/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 1
   88:Src/usbd_cdc_if.c **** 
   89:Src/usbd_cdc_if.c **** /** @defgroup USBD_CDC_IF_Private_Variables USBD_CDC_IF_Private_Variables
   90:Src/usbd_cdc_if.c ****   * @brief Private variables.
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 3
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s 			page 3
 
 
   91:Src/usbd_cdc_if.c ****   * @{
@@ -132,7 +132,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 1
   99:Src/usbd_cdc_if.c **** uint8_t UserTxBufferFS[APP_TX_DATA_SIZE];
  100:Src/usbd_cdc_if.c **** 
  101:Src/usbd_cdc_if.c **** /* USER CODE BEGIN PRIVATE_VARIABLES */
- 102:Src/usbd_cdc_if.c **** extern char str_rx[21];
+ 102:Src/usbd_cdc_if.c **** //extern char str_rx[16];
  103:Src/usbd_cdc_if.c **** /* USER CODE END PRIVATE_VARIABLES */
  104:Src/usbd_cdc_if.c **** 
  105:Src/usbd_cdc_if.c **** /**
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 1
  145:Src/usbd_cdc_if.c ****   CDC_DeInit_FS,
  146:Src/usbd_cdc_if.c ****   CDC_Control_FS,
  147:Src/usbd_cdc_if.c ****   CDC_Receive_FS
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 4
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s 			page 4
 
 
  148:Src/usbd_cdc_if.c **** };
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 1
  182:Src/usbd_cdc_if.c ****   */
  183:Src/usbd_cdc_if.c **** static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
  184:Src/usbd_cdc_if.c **** {
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 5
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s 			page 5
 
 
   48              		.loc 1 184 1 is_stmt 1 view -0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 1
  233:Src/usbd_cdc_if.c ****     case CDC_SET_CONTROL_LINE_STATE:
  234:Src/usbd_cdc_if.c **** 
  235:Src/usbd_cdc_if.c ****     break;
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 6
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s 			page 6
 
 
  236:Src/usbd_cdc_if.c **** 
@@ -352,118 +352,105 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 1
   75              		@ args = 0, pretend = 0, frame = 0
   76              		@ frame_needed = 0, uses_anonymous_args = 0
   77              		.loc 1 264 1 is_stmt 0 view .LVU9
-  78 0000 38B5     		push	{r3, r4, r5, lr}
+  78 0000 10B5     		push	{r4, lr}
   79              	.LCFI0:
-  80              		.cfi_def_cfa_offset 16
-  81              		.cfi_offset 3, -16
-  82              		.cfi_offset 4, -12
-  83              		.cfi_offset 5, -8
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 7
-
-
-  84              		.cfi_offset 14, -4
-  85 0002 0C46     		mov	r4, r1
+  80              		.cfi_def_cfa_offset 8
+  81              		.cfi_offset 4, -8
+  82              		.cfi_offset 14, -4
  265:Src/usbd_cdc_if.c ****   /* USER CODE BEGIN 6 */
- 266:Src/usbd_cdc_if.c ****   //USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
- 267:Src/usbd_cdc_if.c ****   strncpy(str_rx, (char*)Buf, *Len);
-  86              		.loc 1 267 3 is_stmt 1 view .LVU10
-  87 0004 064D     		ldr	r5, .L5
-  88 0006 0A68     		ldr	r2, [r1]
-  89 0008 0146     		mov	r1, r0
-  90              	.LVL3:
-  91              		.loc 1 267 3 is_stmt 0 view .LVU11
-  92 000a 2846     		mov	r0, r5
-  93              	.LVL4:
-  94              		.loc 1 267 3 view .LVU12
-  95 000c FFF7FEFF 		bl	strncpy
-  96              	.LVL5:
- 268:Src/usbd_cdc_if.c ****   str_rx[*Len]=0;
-  97              		.loc 1 268 3 is_stmt 1 view .LVU13
-  98              		.loc 1 268 10 is_stmt 0 view .LVU14
-  99 0010 2368     		ldr	r3, [r4]
- 100              		.loc 1 268 15 view .LVU15
- 101 0012 0024     		movs	r4, #0
- 102              	.LVL6:
- 103              		.loc 1 268 15 view .LVU16
- 104 0014 EC54     		strb	r4, [r5, r3]
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s 			page 7
+
+
+ 266:Src/usbd_cdc_if.c ****   USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
+  83              		.loc 1 266 3 is_stmt 1 view .LVU10
+  84 0002 054C     		ldr	r4, .L5
+  85 0004 0146     		mov	r1, r0
+  86              	.LVL3:
+  87              		.loc 1 266 3 is_stmt 0 view .LVU11
+  88 0006 2046     		mov	r0, r4
+  89              	.LVL4:
+  90              		.loc 1 266 3 view .LVU12
+  91 0008 FFF7FEFF 		bl	USBD_CDC_SetRxBuffer
+  92              	.LVL5:
+ 267:Src/usbd_cdc_if.c ****   //strncpy(str_rx, (char*)Buf, *Len);
+ 268:Src/usbd_cdc_if.c ****   //str_rx[*Len]=0;
  269:Src/usbd_cdc_if.c ****   USBD_CDC_ReceivePacket(&hUsbDeviceFS);
- 105              		.loc 1 269 3 is_stmt 1 view .LVU17
- 106 0016 0348     		ldr	r0, .L5+4
- 107 0018 FFF7FEFF 		bl	USBD_CDC_ReceivePacket
- 108              	.LVL7:
+  93              		.loc 1 269 3 is_stmt 1 view .LVU13
+  94 000c 2046     		mov	r0, r4
+  95 000e FFF7FEFF 		bl	USBD_CDC_ReceivePacket
+  96              	.LVL6:
  270:Src/usbd_cdc_if.c ****   return (USBD_OK);
- 109              		.loc 1 270 3 view .LVU18
+  97              		.loc 1 270 3 view .LVU14
  271:Src/usbd_cdc_if.c ****   /* USER CODE END 6 */
  272:Src/usbd_cdc_if.c **** }
- 110              		.loc 1 272 1 is_stmt 0 view .LVU19
- 111 001c 2046     		mov	r0, r4
- 112 001e 38BD     		pop	{r3, r4, r5, pc}
- 113              	.L6:
- 114              		.align	2
- 115              	.L5:
- 116 0020 00000000 		.word	str_rx
- 117 0024 00000000 		.word	hUsbDeviceFS
- 118              		.cfi_endproc
- 119              	.LFE71:
- 121              		.section	.text.CDC_Init_FS,"ax",%progbits
- 122              		.align	1
- 123              		.syntax unified
- 124              		.thumb
- 125              		.thumb_func
- 126              		.fpu softvfp
- 128              	CDC_Init_FS:
- 129              	.LFB68:
+  98              		.loc 1 272 1 is_stmt 0 view .LVU15
+  99 0012 0020     		movs	r0, #0
+ 100 0014 10BD     		pop	{r4, pc}
+ 101              	.L6:
+ 102 0016 00BF     		.align	2
+ 103              	.L5:
+ 104 0018 00000000 		.word	hUsbDeviceFS
+ 105              		.cfi_endproc
+ 106              	.LFE71:
+ 108              		.section	.text.CDC_Init_FS,"ax",%progbits
+ 109              		.align	1
+ 110              		.syntax unified
+ 111              		.thumb
+ 112              		.thumb_func
+ 113              		.fpu softvfp
+ 115              	CDC_Init_FS:
+ 116              	.LFB68:
  156:Src/usbd_cdc_if.c ****   /* USER CODE BEGIN 3 */
- 130              		.loc 1 156 1 is_stmt 1 view -0
- 131              		.cfi_startproc
- 132              		@ args = 0, pretend = 0, frame = 0
- 133              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 8
-
-
- 134 0000 10B5     		push	{r4, lr}
- 135              	.LCFI1:
- 136              		.cfi_def_cfa_offset 8
- 137              		.cfi_offset 4, -8
- 138              		.cfi_offset 14, -4
+ 117              		.loc 1 156 1 is_stmt 1 view -0
+ 118              		.cfi_startproc
+ 119              		@ args = 0, pretend = 0, frame = 0
+ 120              		@ frame_needed = 0, uses_anonymous_args = 0
+ 121 0000 10B5     		push	{r4, lr}
+ 122              	.LCFI1:
+ 123              		.cfi_def_cfa_offset 8
+ 124              		.cfi_offset 4, -8
+ 125              		.cfi_offset 14, -4
  159:Src/usbd_cdc_if.c ****   USBD_CDC_SetRxBuffer(&hUsbDeviceFS, UserRxBufferFS);
- 139              		.loc 1 159 3 view .LVU21
- 140 0002 064C     		ldr	r4, .L9
- 141 0004 0022     		movs	r2, #0
- 142 0006 0649     		ldr	r1, .L9+4
- 143 0008 2046     		mov	r0, r4
- 144 000a FFF7FEFF 		bl	USBD_CDC_SetTxBuffer
- 145              	.LVL8:
+ 126              		.loc 1 159 3 view .LVU17
+ 127 0002 064C     		ldr	r4, .L9
+ 128 0004 0022     		movs	r2, #0
+ 129 0006 0649     		ldr	r1, .L9+4
+ 130 0008 2046     		mov	r0, r4
+ 131 000a FFF7FEFF 		bl	USBD_CDC_SetTxBuffer
+ 132              	.LVL7:
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s 			page 8
+
+
  160:Src/usbd_cdc_if.c ****   return (USBD_OK);
- 146              		.loc 1 160 3 view .LVU22
- 147 000e 0549     		ldr	r1, .L9+8
- 148 0010 2046     		mov	r0, r4
- 149 0012 FFF7FEFF 		bl	USBD_CDC_SetRxBuffer
- 150              	.LVL9:
+ 133              		.loc 1 160 3 view .LVU18
+ 134 000e 0549     		ldr	r1, .L9+8
+ 135 0010 2046     		mov	r0, r4
+ 136 0012 FFF7FEFF 		bl	USBD_CDC_SetRxBuffer
+ 137              	.LVL8:
  161:Src/usbd_cdc_if.c ****   /* USER CODE END 3 */
- 151              		.loc 1 161 3 view .LVU23
+ 138              		.loc 1 161 3 view .LVU19
  163:Src/usbd_cdc_if.c **** 
- 152              		.loc 1 163 1 is_stmt 0 view .LVU24
- 153 0016 0020     		movs	r0, #0
- 154 0018 10BD     		pop	{r4, pc}
- 155              	.L10:
- 156 001a 00BF     		.align	2
- 157              	.L9:
- 158 001c 00000000 		.word	hUsbDeviceFS
- 159 0020 00000000 		.word	UserTxBufferFS
- 160 0024 00000000 		.word	UserRxBufferFS
- 161              		.cfi_endproc
- 162              	.LFE68:
- 164              		.section	.text.CDC_Transmit_FS,"ax",%progbits
- 165              		.align	1
- 166              		.global	CDC_Transmit_FS
- 167              		.syntax unified
- 168              		.thumb
- 169              		.thumb_func
- 170              		.fpu softvfp
- 172              	CDC_Transmit_FS:
- 173              	.LVL10:
- 174              	.LFB72:
+ 139              		.loc 1 163 1 is_stmt 0 view .LVU20
+ 140 0016 0020     		movs	r0, #0
+ 141 0018 10BD     		pop	{r4, pc}
+ 142              	.L10:
+ 143 001a 00BF     		.align	2
+ 144              	.L9:
+ 145 001c 00000000 		.word	hUsbDeviceFS
+ 146 0020 00000000 		.word	UserTxBufferFS
+ 147 0024 00000000 		.word	UserRxBufferFS
+ 148              		.cfi_endproc
+ 149              	.LFE68:
+ 151              		.section	.text.CDC_Transmit_FS,"ax",%progbits
+ 152              		.align	1
+ 153              		.global	CDC_Transmit_FS
+ 154              		.syntax unified
+ 155              		.thumb
+ 156              		.thumb_func
+ 157              		.fpu softvfp
+ 159              	CDC_Transmit_FS:
+ 160              	.LVL9:
+ 161              	.LFB72:
  273:Src/usbd_cdc_if.c **** 
  274:Src/usbd_cdc_if.c **** /**
  275:Src/usbd_cdc_if.c ****   * @brief  CDC_Transmit_FS
@@ -478,139 +465,136 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 1
  284:Src/usbd_cdc_if.c ****   */
  285:Src/usbd_cdc_if.c **** uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len)
  286:Src/usbd_cdc_if.c **** {
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 9
-
-
- 175              		.loc 1 286 1 is_stmt 1 view -0
- 176              		.cfi_startproc
- 177              		@ args = 0, pretend = 0, frame = 0
- 178              		@ frame_needed = 0, uses_anonymous_args = 0
+ 162              		.loc 1 286 1 is_stmt 1 view -0
+ 163              		.cfi_startproc
+ 164              		@ args = 0, pretend = 0, frame = 0
+ 165              		@ frame_needed = 0, uses_anonymous_args = 0
  287:Src/usbd_cdc_if.c ****   uint8_t result = USBD_OK;
- 179              		.loc 1 287 3 view .LVU26
+ 166              		.loc 1 287 3 view .LVU22
  288:Src/usbd_cdc_if.c ****   /* USER CODE BEGIN 7 */
  289:Src/usbd_cdc_if.c ****   USBD_CDC_HandleTypeDef *hcdc = (USBD_CDC_HandleTypeDef*)hUsbDeviceFS.pClassData;
- 180              		.loc 1 289 3 view .LVU27
- 181              		.loc 1 289 27 is_stmt 0 view .LVU28
- 182 0000 094B     		ldr	r3, .L19
- 183 0002 D3F8B832 		ldr	r3, [r3, #696]
- 184              	.LVL11:
+ 167              		.loc 1 289 3 view .LVU23
+ 168              		.loc 1 289 27 is_stmt 0 view .LVU24
+ 169 0000 094B     		ldr	r3, .L19
+ 170 0002 D3F8B832 		ldr	r3, [r3, #696]
+ 171              	.LVL10:
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s 			page 9
+
+
  290:Src/usbd_cdc_if.c ****   if (hcdc->TxState != 0){
- 185              		.loc 1 290 3 is_stmt 1 view .LVU29
- 186              		.loc 1 290 11 is_stmt 0 view .LVU30
- 187 0006 D3F81432 		ldr	r3, [r3, #532]
- 188              	.LVL12:
- 189              		.loc 1 290 6 view .LVU31
- 190 000a 0BB1     		cbz	r3, .L18
+ 172              		.loc 1 290 3 is_stmt 1 view .LVU25
+ 173              		.loc 1 290 11 is_stmt 0 view .LVU26
+ 174 0006 D3F81432 		ldr	r3, [r3, #532]
+ 175              	.LVL11:
+ 176              		.loc 1 290 6 view .LVU27
+ 177 000a 0BB1     		cbz	r3, .L18
  291:Src/usbd_cdc_if.c ****     return USBD_BUSY;
- 191              		.loc 1 291 12 view .LVU32
- 192 000c 0120     		movs	r0, #1
- 193              	.LVL13:
+ 178              		.loc 1 291 12 view .LVU28
+ 179 000c 0120     		movs	r0, #1
+ 180              	.LVL12:
  292:Src/usbd_cdc_if.c ****   }
  293:Src/usbd_cdc_if.c ****   USBD_CDC_SetTxBuffer(&hUsbDeviceFS, Buf, Len);
  294:Src/usbd_cdc_if.c ****   result = USBD_CDC_TransmitPacket(&hUsbDeviceFS);
  295:Src/usbd_cdc_if.c ****   /* USER CODE END 7 */
  296:Src/usbd_cdc_if.c ****   return result;
  297:Src/usbd_cdc_if.c **** }
- 194              		.loc 1 297 1 view .LVU33
- 195 000e 7047     		bx	lr
- 196              	.LVL14:
- 197              	.L18:
+ 181              		.loc 1 297 1 view .LVU29
+ 182 000e 7047     		bx	lr
+ 183              	.LVL13:
+ 184              	.L18:
  286:Src/usbd_cdc_if.c ****   uint8_t result = USBD_OK;
- 198              		.loc 1 286 1 view .LVU34
- 199 0010 10B5     		push	{r4, lr}
- 200              	.LCFI2:
- 201              		.cfi_def_cfa_offset 8
- 202              		.cfi_offset 4, -8
- 203              		.cfi_offset 14, -4
- 204 0012 0A46     		mov	r2, r1
- 205 0014 0146     		mov	r1, r0
- 206              	.LVL15:
+ 185              		.loc 1 286 1 view .LVU30
+ 186 0010 10B5     		push	{r4, lr}
+ 187              	.LCFI2:
+ 188              		.cfi_def_cfa_offset 8
+ 189              		.cfi_offset 4, -8
+ 190              		.cfi_offset 14, -4
+ 191 0012 0A46     		mov	r2, r1
+ 192 0014 0146     		mov	r1, r0
+ 193              	.LVL14:
  293:Src/usbd_cdc_if.c ****   result = USBD_CDC_TransmitPacket(&hUsbDeviceFS);
- 207              		.loc 1 293 3 is_stmt 1 view .LVU35
- 208 0016 044C     		ldr	r4, .L19
- 209              	.LVL16:
+ 194              		.loc 1 293 3 is_stmt 1 view .LVU31
+ 195 0016 044C     		ldr	r4, .L19
+ 196              	.LVL15:
  293:Src/usbd_cdc_if.c ****   result = USBD_CDC_TransmitPacket(&hUsbDeviceFS);
- 210              		.loc 1 293 3 is_stmt 0 view .LVU36
- 211 0018 2046     		mov	r0, r4
- 212              	.LVL17:
+ 197              		.loc 1 293 3 is_stmt 0 view .LVU32
+ 198 0018 2046     		mov	r0, r4
+ 199              	.LVL16:
  293:Src/usbd_cdc_if.c ****   result = USBD_CDC_TransmitPacket(&hUsbDeviceFS);
- 213              		.loc 1 293 3 view .LVU37
- 214 001a FFF7FEFF 		bl	USBD_CDC_SetTxBuffer
- 215              	.LVL18:
+ 200              		.loc 1 293 3 view .LVU33
+ 201 001a FFF7FEFF 		bl	USBD_CDC_SetTxBuffer
+ 202              	.LVL17:
  294:Src/usbd_cdc_if.c ****   /* USER CODE END 7 */
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 10
-
-
- 216              		.loc 1 294 3 is_stmt 1 view .LVU38
+ 203              		.loc 1 294 3 is_stmt 1 view .LVU34
  294:Src/usbd_cdc_if.c ****   /* USER CODE END 7 */
- 217              		.loc 1 294 12 is_stmt 0 view .LVU39
- 218 001e 2046     		mov	r0, r4
- 219 0020 FFF7FEFF 		bl	USBD_CDC_TransmitPacket
- 220              	.LVL19:
+ 204              		.loc 1 294 12 is_stmt 0 view .LVU35
+ 205 001e 2046     		mov	r0, r4
+ 206 0020 FFF7FEFF 		bl	USBD_CDC_TransmitPacket
+ 207              	.LVL18:
  296:Src/usbd_cdc_if.c **** }
- 221              		.loc 1 296 3 is_stmt 1 view .LVU40
- 222              		.loc 1 297 1 is_stmt 0 view .LVU41
- 223 0024 10BD     		pop	{r4, pc}
- 224              	.L20:
- 225 0026 00BF     		.align	2
- 226              	.L19:
- 227 0028 00000000 		.word	hUsbDeviceFS
- 228              		.cfi_endproc
- 229              	.LFE72:
- 231              		.global	USBD_Interface_fops_FS
- 232              		.comm	UserTxBufferFS,1000,4
- 233              		.comm	UserRxBufferFS,1000,4
- 234              		.section	.data.USBD_Interface_fops_FS,"aw"
- 235              		.align	2
- 238              	USBD_Interface_fops_FS:
- 239 0000 00000000 		.word	CDC_Init_FS
- 240 0004 00000000 		.word	CDC_DeInit_FS
- 241 0008 00000000 		.word	CDC_Control_FS
- 242 000c 00000000 		.word	CDC_Receive_FS
- 243              		.text
- 244              	.Letext0:
- 245              		.file 2 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\machine\\_default_types.h"
- 246              		.file 3 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\sys\\lock.h"
- 247              		.file 4 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\sys\\_types.h"
- 248              		.file 5 "c:\\software\\embededgcc\\arm-gcc\\lib\\gcc\\arm-none-eabi\\8.2.1\\include\\stddef.h"
- 249              		.file 6 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\sys\\reent.h"
- 250              		.file 7 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\sys\\_stdint.h"
- 251              		.file 8 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\stdlib.h"
- 252              		.file 9 "Drivers/CMSIS/Include/core_cm3.h"
- 253              		.file 10 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 254              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
- 255              		.file 12 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
- 256              		.file 13 "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h"
- 257              		.file 14 "Inc/usbd_cdc_if.h"
- 258              		.file 15 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\string.h"
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s 			page 11
+ 208              		.loc 1 296 3 is_stmt 1 view .LVU36
+ 209              		.loc 1 297 1 is_stmt 0 view .LVU37
+ 210 0024 10BD     		pop	{r4, pc}
+ 211              	.L20:
+ 212 0026 00BF     		.align	2
+ 213              	.L19:
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s 			page 10
+
+
+ 214 0028 00000000 		.word	hUsbDeviceFS
+ 215              		.cfi_endproc
+ 216              	.LFE72:
+ 218              		.global	USBD_Interface_fops_FS
+ 219              		.comm	UserTxBufferFS,1000,4
+ 220              		.comm	UserRxBufferFS,1000,4
+ 221              		.section	.data.USBD_Interface_fops_FS,"aw"
+ 222              		.align	2
+ 225              	USBD_Interface_fops_FS:
+ 226 0000 00000000 		.word	CDC_Init_FS
+ 227 0004 00000000 		.word	CDC_DeInit_FS
+ 228 0008 00000000 		.word	CDC_Control_FS
+ 229 000c 00000000 		.word	CDC_Receive_FS
+ 230              		.text
+ 231              	.Letext0:
+ 232              		.file 2 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 233              		.file 3 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\sys\\lock.h"
+ 234              		.file 4 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\sys\\_types.h"
+ 235              		.file 5 "c:\\software\\embededgcc\\arm-gcc\\lib\\gcc\\arm-none-eabi\\8.2.1\\include\\stddef.h"
+ 236              		.file 6 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\sys\\reent.h"
+ 237              		.file 7 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 238              		.file 8 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\stdlib.h"
+ 239              		.file 9 "Drivers/CMSIS/Include/core_cm3.h"
+ 240              		.file 10 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 241              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 242              		.file 12 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
+ 243              		.file 13 "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h"
+ 244              		.file 14 "Inc/usbd_cdc_if.h"
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 usbd_cdc_if.c
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:16     .text.CDC_DeInit_FS:0000000000000000 $t
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:23     .text.CDC_DeInit_FS:0000000000000000 CDC_DeInit_FS
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:39     .text.CDC_Control_FS:0000000000000000 $t
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:45     .text.CDC_Control_FS:0000000000000000 CDC_Control_FS
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:64     .text.CDC_Receive_FS:0000000000000000 $t
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:70     .text.CDC_Receive_FS:0000000000000000 CDC_Receive_FS
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:116    .text.CDC_Receive_FS:0000000000000020 $d
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:122    .text.CDC_Init_FS:0000000000000000 $t
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:128    .text.CDC_Init_FS:0000000000000000 CDC_Init_FS
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:158    .text.CDC_Init_FS:000000000000001c $d
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:16     .text.CDC_DeInit_FS:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:23     .text.CDC_DeInit_FS:0000000000000000 CDC_DeInit_FS
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:39     .text.CDC_Control_FS:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:45     .text.CDC_Control_FS:0000000000000000 CDC_Control_FS
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:64     .text.CDC_Receive_FS:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:70     .text.CDC_Receive_FS:0000000000000000 CDC_Receive_FS
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:104    .text.CDC_Receive_FS:0000000000000018 $d
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:109    .text.CDC_Init_FS:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:115    .text.CDC_Init_FS:0000000000000000 CDC_Init_FS
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:145    .text.CDC_Init_FS:000000000000001c $d
                             *COM*:00000000000003e8 UserTxBufferFS
                             *COM*:00000000000003e8 UserRxBufferFS
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:165    .text.CDC_Transmit_FS:0000000000000000 $t
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:172    .text.CDC_Transmit_FS:0000000000000000 CDC_Transmit_FS
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:227    .text.CDC_Transmit_FS:0000000000000028 $d
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:238    .data.USBD_Interface_fops_FS:0000000000000000 USBD_Interface_fops_FS
-C:\Users\avpas\AppData\Local\Temp\ccmHkpTb.s:235    .data.USBD_Interface_fops_FS:0000000000000000 $d
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:152    .text.CDC_Transmit_FS:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:159    .text.CDC_Transmit_FS:0000000000000000 CDC_Transmit_FS
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:214    .text.CDC_Transmit_FS:0000000000000028 $d
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:225    .data.USBD_Interface_fops_FS:0000000000000000 USBD_Interface_fops_FS
+C:\Users\avpas\AppData\Local\Temp\ccFP2z9T.s:222    .data.USBD_Interface_fops_FS:0000000000000000 $d
 
 UNDEFINED SYMBOLS
-strncpy
+USBD_CDC_SetRxBuffer
 USBD_CDC_ReceivePacket
-str_rx
 hUsbDeviceFS
 USBD_CDC_SetTxBuffer
-USBD_CDC_SetRxBuffer
 USBD_CDC_TransmitPacket

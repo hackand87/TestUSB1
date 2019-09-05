@@ -31,6 +31,10 @@
 #define RS_RES() HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET);
 
 void LCD_Init(void);
-void LCD_SendString(uint8_t StrNum, char* str);
+void LCD_SendString(char* str);
+void LCD_SendChar(char ch);
+void LCD_Clear(void);
+void LCD_SetPos(uint8_t x, uint8_t y);
+void LCD_SendData(uint8_t dt);
 
 #endif /* __LCD_H__ */

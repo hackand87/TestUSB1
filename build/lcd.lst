@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 1
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 1
    6:Src/lcd.c     ****     {
   46              		.loc 1 6 24 discriminator 3 view .LVU7
   47 000a 9BB2     		uxth	r3, r3
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 2
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 2
 
 
   48              	.LVL3:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 1
   98              		.loc 1 14 34 is_stmt 1 discriminator 1 view .LVU20
   99 001c 0122     		movs	r2, #1
  100 001e 0821     		movs	r1, #8
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 3
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 3
 
 
  101 0020 3548     		ldr	r0, .L23+4
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 1
  151 005c 0122     		movs	r2, #1
  152 005e 8021     		movs	r1, #128
  153 0060 2548     		ldr	r0, .L23+4
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 4
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 4
 
 
  154 0062 FFF7FEFF 		bl	HAL_GPIO_WritePin
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 1
  202 00a0 FFF7FEFF 		bl	HAL_GPIO_WritePin
  203              	.LVL17:
  204 00a4 BFE7     		b	.L9
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 5
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 5
 
 
  205              	.L10:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 1
  252              		.loc 1 20 61 discriminator 2 view .LVU62
  253              		.loc 1 21 1 is_stmt 0 discriminator 2 view .LVU63
  254 00f0 CBE7     		b	.L5
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 6
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 6
 
 
  255              	.L24:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 1
  304 001e 2046     		mov	r0, r4
  305 0020 FFF7FEFF 		bl	HAL_GPIO_WritePin
  306              	.LVL28:
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 7
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 7
 
 
  307              		.loc 1 28 12 view .LVU71
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 1
  357              	.LVL32:
  358              		.loc 1 34 13 is_stmt 1 view .LVU80
   35:Src/lcd.c     ****     
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 8
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 8
 
 
   36:Src/lcd.c     ****     LCD_SetData(dt);
@@ -437,17 +437,16 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 1
  369              		.loc 1 38 12 view .LVU83
   39:Src/lcd.c     ****     LCD_Delay();
  370              		.loc 1 39 5 view .LVU84
-  40:Src/lcd.c     ****     //HAL_Delay(1);
-  41:Src/lcd.c     ****     E_RES();
- 371              		.loc 1 41 5 view .LVU85
+  40:Src/lcd.c     ****     E_RES();
+ 371              		.loc 1 40 5 view .LVU85
  372 0024 0022     		movs	r2, #0
  373 0026 4FF40071 		mov	r1, #512
  374 002a 2046     		mov	r0, r4
  375 002c FFF7FEFF 		bl	HAL_GPIO_WritePin
  376              	.LVL35:
- 377              		.loc 1 41 12 view .LVU86
-  42:Src/lcd.c     **** }
- 378              		.loc 1 42 1 is_stmt 0 view .LVU87
+ 377              		.loc 1 40 12 view .LVU86
+  41:Src/lcd.c     **** }
+ 378              		.loc 1 41 1 is_stmt 0 view .LVU87
  379 0030 38BD     		pop	{r3, r4, r5, pc}
  380              	.L32:
  381 0032 00BF     		.align	2
@@ -464,9 +463,9 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 1
  393              		.fpu softvfp
  395              	LCD_Init:
  396              	.LFB69:
-  43:Src/lcd.c     **** 
-  44:Src/lcd.c     **** void LCD_Init(void){
- 397              		.loc 1 44 20 is_stmt 1 view -0
+  42:Src/lcd.c     **** 
+  43:Src/lcd.c     **** void LCD_Init(void){
+ 397              		.loc 1 43 20 is_stmt 1 view -0
  398              		.cfi_startproc
  399              		@ args = 0, pretend = 0, frame = 0
  400              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -475,203 +474,359 @@ ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 1
  403              		.cfi_def_cfa_offset 8
  404              		.cfi_offset 3, -8
  405              		.cfi_offset 14, -4
-  45:Src/lcd.c     ****     LCD_SendCmd(0x38);
- 406              		.loc 1 45 5 view .LVU89
+  44:Src/lcd.c     ****     LCD_SendCmd(0x38);
+ 406              		.loc 1 44 5 view .LVU89
  407 0002 3820     		movs	r0, #56
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 9
-
-
  408 0004 FFF7FEFF 		bl	LCD_SendCmd
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 9
+
+
  409              	.LVL36:
-  46:Src/lcd.c     ****     HAL_Delay(1);
- 410              		.loc 1 46 5 view .LVU90
+  45:Src/lcd.c     ****     HAL_Delay(1);
+ 410              		.loc 1 45 5 view .LVU90
  411 0008 0120     		movs	r0, #1
  412 000a FFF7FEFF 		bl	HAL_Delay
  413              	.LVL37:
-  47:Src/lcd.c     ****     LCD_SendCmd (0x0C);
- 414              		.loc 1 47 5 view .LVU91
+  46:Src/lcd.c     ****     LCD_SendCmd (0x0C);
+ 414              		.loc 1 46 5 view .LVU91
  415 000e 0C20     		movs	r0, #12
  416 0010 FFF7FEFF 		bl	LCD_SendCmd
  417              	.LVL38:
-  48:Src/lcd.c     ****     HAL_Delay(1);
- 418              		.loc 1 48 5 view .LVU92
+  47:Src/lcd.c     ****     HAL_Delay(1);
+ 418              		.loc 1 47 5 view .LVU92
  419 0014 0120     		movs	r0, #1
  420 0016 FFF7FEFF 		bl	HAL_Delay
  421              	.LVL39:
-  49:Src/lcd.c     ****     LCD_SendCmd(0x01);
- 422              		.loc 1 49 5 view .LVU93
+  48:Src/lcd.c     ****     LCD_SendCmd(0x01);
+ 422              		.loc 1 48 5 view .LVU93
  423 001a 0120     		movs	r0, #1
  424 001c FFF7FEFF 		bl	LCD_SendCmd
  425              	.LVL40:
-  50:Src/lcd.c     ****     HAL_Delay(2);
- 426              		.loc 1 50 5 view .LVU94
+  49:Src/lcd.c     ****     HAL_Delay(2);
+ 426              		.loc 1 49 5 view .LVU94
  427 0020 0220     		movs	r0, #2
  428 0022 FFF7FEFF 		bl	HAL_Delay
  429              	.LVL41:
-  51:Src/lcd.c     ****     LCD_SendCmd(0x06);
- 430              		.loc 1 51 5 view .LVU95
+  50:Src/lcd.c     ****     LCD_SendCmd(0x06);
+ 430              		.loc 1 50 5 view .LVU95
  431 0026 0620     		movs	r0, #6
  432 0028 FFF7FEFF 		bl	LCD_SendCmd
  433              	.LVL42:
-  52:Src/lcd.c     ****     HAL_Delay(1);
- 434              		.loc 1 52 5 view .LVU96
+  51:Src/lcd.c     ****     HAL_Delay(1);
+ 434              		.loc 1 51 5 view .LVU96
  435 002c 0120     		movs	r0, #1
  436 002e FFF7FEFF 		bl	HAL_Delay
  437              	.LVL43:
-  53:Src/lcd.c     ****     LCD_SendCmd(0x02);
- 438              		.loc 1 53 5 view .LVU97
+  52:Src/lcd.c     ****     LCD_SendCmd(0x02);
+ 438              		.loc 1 52 5 view .LVU97
  439 0032 0220     		movs	r0, #2
  440 0034 FFF7FEFF 		bl	LCD_SendCmd
  441              	.LVL44:
-  54:Src/lcd.c     ****     HAL_Delay(2);
- 442              		.loc 1 54 5 view .LVU98
+  53:Src/lcd.c     ****     HAL_Delay(2);
+ 442              		.loc 1 53 5 view .LVU98
  443 0038 0220     		movs	r0, #2
  444 003a FFF7FEFF 		bl	HAL_Delay
  445              	.LVL45:
-  55:Src/lcd.c     **** }
- 446              		.loc 1 55 1 is_stmt 0 view .LVU99
+  54:Src/lcd.c     **** }
+ 446              		.loc 1 54 1 is_stmt 0 view .LVU99
  447 003e 08BD     		pop	{r3, pc}
  448              		.cfi_endproc
  449              	.LFE69:
- 451              		.section	.text.LCD_SendString,"ax",%progbits
+ 451              		.section	.text.LCD_Clear,"ax",%progbits
  452              		.align	1
- 453              		.global	LCD_SendString
+ 453              		.global	LCD_Clear
  454              		.syntax unified
  455              		.thumb
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 10
-
-
  456              		.thumb_func
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 10
+
+
  457              		.fpu softvfp
- 459              	LCD_SendString:
- 460              	.LVL46:
- 461              	.LFB70:
-  56:Src/lcd.c     **** 
-  57:Src/lcd.c     **** void LCD_SendString(uint8_t StrNum, char* str){
- 462              		.loc 1 57 47 is_stmt 1 view -0
- 463              		.cfi_startproc
- 464              		@ args = 0, pretend = 0, frame = 0
- 465              		@ frame_needed = 0, uses_anonymous_args = 0
- 466              		.loc 1 57 47 is_stmt 0 view .LVU101
- 467 0000 38B5     		push	{r3, r4, r5, lr}
- 468              	.LCFI4:
- 469              		.cfi_def_cfa_offset 16
- 470              		.cfi_offset 3, -16
- 471              		.cfi_offset 4, -12
- 472              		.cfi_offset 5, -8
- 473              		.cfi_offset 14, -4
- 474 0002 0D46     		mov	r5, r1
-  58:Src/lcd.c     ****     
-  59:Src/lcd.c     ****     uint8_t i=0;
- 475              		.loc 1 59 5 is_stmt 1 view .LVU102
- 476              	.LVL47:
-  60:Src/lcd.c     **** 
-  61:Src/lcd.c     ****     if(StrNum == 0){
- 477              		.loc 1 61 5 view .LVU103
- 478              		.loc 1 61 7 is_stmt 0 view .LVU104
- 479 0004 80B9     		cbnz	r0, .L36
-  62:Src/lcd.c     ****         LCD_SendCmd(0x80);
- 480              		.loc 1 62 9 is_stmt 1 view .LVU105
- 481 0006 8020     		movs	r0, #128
- 482              	.LVL48:
- 483              		.loc 1 62 9 is_stmt 0 view .LVU106
- 484 0008 FFF7FEFF 		bl	LCD_SendCmd
- 485              	.LVL49:
- 486              	.L37:
-  63:Src/lcd.c     ****     }else{
-  64:Src/lcd.c     ****         LCD_SendCmd(0xC0);
-  65:Src/lcd.c     ****     }
-  66:Src/lcd.c     ****     HAL_Delay(1);
- 487              		.loc 1 66 5 is_stmt 1 view .LVU107
- 488 000c 0120     		movs	r0, #1
- 489 000e FFF7FEFF 		bl	HAL_Delay
- 490              	.LVL50:
-  67:Src/lcd.c     ****     
-  68:Src/lcd.c     ****     while(str[i] != 0){
- 491              		.loc 1 68 5 view .LVU108
-  59:Src/lcd.c     **** 
- 492              		.loc 1 59 13 is_stmt 0 view .LVU109
- 493 0012 0024     		movs	r4, #0
- 494              	.LVL51:
- 495              	.L38:
- 496              		.loc 1 68 14 view .LVU110
- 497 0014 285D     		ldrb	r0, [r5, r4]	@ zero_extendqisi2
- 498              		.loc 1 68 10 view .LVU111
- 499 0016 58B1     		cbz	r0, .L41
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 11
+ 459              	LCD_Clear:
+ 460              	.LFB70:
+  55:Src/lcd.c     **** 
+  56:Src/lcd.c     **** void LCD_Clear(void){
+ 461              		.loc 1 56 21 is_stmt 1 view -0
+ 462              		.cfi_startproc
+ 463              		@ args = 0, pretend = 0, frame = 0
+ 464              		@ frame_needed = 0, uses_anonymous_args = 0
+ 465 0000 08B5     		push	{r3, lr}
+ 466              	.LCFI4:
+ 467              		.cfi_def_cfa_offset 8
+ 468              		.cfi_offset 3, -8
+ 469              		.cfi_offset 14, -4
+  57:Src/lcd.c     ****     LCD_SendCmd(0x01);
+ 470              		.loc 1 57 5 view .LVU101
+ 471 0002 0120     		movs	r0, #1
+ 472 0004 FFF7FEFF 		bl	LCD_SendCmd
+ 473              	.LVL46:
+  58:Src/lcd.c     ****     HAL_Delay(1);
+ 474              		.loc 1 58 5 view .LVU102
+ 475 0008 0120     		movs	r0, #1
+ 476 000a FFF7FEFF 		bl	HAL_Delay
+ 477              	.LVL47:
+  59:Src/lcd.c     ****     
+  60:Src/lcd.c     **** }
+ 478              		.loc 1 60 1 is_stmt 0 view .LVU103
+ 479 000e 08BD     		pop	{r3, pc}
+ 480              		.cfi_endproc
+ 481              	.LFE70:
+ 483              		.section	.text.LCD_SetPos,"ax",%progbits
+ 484              		.align	1
+ 485              		.global	LCD_SetPos
+ 486              		.syntax unified
+ 487              		.thumb
+ 488              		.thumb_func
+ 489              		.fpu softvfp
+ 491              	LCD_SetPos:
+ 492              	.LVL48:
+ 493              	.LFB71:
+  61:Src/lcd.c     **** 
+  62:Src/lcd.c     **** void LCD_SetPos(uint8_t x, uint8_t y){
+ 494              		.loc 1 62 38 is_stmt 1 view -0
+ 495              		.cfi_startproc
+ 496              		@ args = 0, pretend = 0, frame = 0
+ 497              		@ frame_needed = 0, uses_anonymous_args = 0
+ 498              		.loc 1 62 38 is_stmt 0 view .LVU105
+ 499 0000 08B5     		push	{r3, lr}
+ 500              	.LCFI5:
+ 501              		.cfi_def_cfa_offset 8
+ 502              		.cfi_offset 3, -8
+ 503              		.cfi_offset 14, -4
+  63:Src/lcd.c     ****     
+  64:Src/lcd.c     ****     switch (y)
+ 504              		.loc 1 64 5 is_stmt 1 view .LVU106
+ 505 0002 11B1     		cbz	r1, .L38
+ 506 0004 0129     		cmp	r1, #1
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 11
 
 
-  69:Src/lcd.c     ****         LCD_SendData(str[i]);
- 500              		.loc 1 69 9 is_stmt 1 view .LVU112
- 501 0018 FFF7FEFF 		bl	LCD_SendData
- 502              	.LVL52:
-  70:Src/lcd.c     ****         //LCD_Delay();
+ 507 0006 08D0     		beq	.L39
+ 508              	.LVL49:
+ 509              	.L37:
+  65:Src/lcd.c     ****     {
+  66:Src/lcd.c     ****     case 0:
+  67:Src/lcd.c     ****         LCD_SendCmd(x|0x80);
+  68:Src/lcd.c     ****         HAL_Delay(1);
+  69:Src/lcd.c     ****         break;
+  70:Src/lcd.c     ****     case 1:
+  71:Src/lcd.c     ****         LCD_SendCmd((0x40+x)|0x80);
+  72:Src/lcd.c     ****         HAL_Delay(1);
+  73:Src/lcd.c     ****         break;
+  74:Src/lcd.c     ****     }
+  75:Src/lcd.c     ****     
+  76:Src/lcd.c     **** }
+ 510              		.loc 1 76 1 is_stmt 0 view .LVU107
+ 511 0008 08BD     		pop	{r3, pc}
+ 512              	.LVL50:
+ 513              	.L38:
+  67:Src/lcd.c     ****         HAL_Delay(1);
+ 514              		.loc 1 67 9 is_stmt 1 view .LVU108
+ 515 000a 40F08000 		orr	r0, r0, #128
+ 516              	.LVL51:
+  67:Src/lcd.c     ****         HAL_Delay(1);
+ 517              		.loc 1 67 9 is_stmt 0 view .LVU109
+ 518 000e FFF7FEFF 		bl	LCD_SendCmd
+ 519              	.LVL52:
+  68:Src/lcd.c     ****         break;
+ 520              		.loc 1 68 9 is_stmt 1 view .LVU110
+ 521 0012 0120     		movs	r0, #1
+ 522 0014 FFF7FEFF 		bl	HAL_Delay
+ 523              	.LVL53:
+  69:Src/lcd.c     ****     case 1:
+ 524              		.loc 1 69 9 view .LVU111
+ 525 0018 F6E7     		b	.L37
+ 526              	.LVL54:
+ 527              	.L39:
   71:Src/lcd.c     ****         HAL_Delay(1);
- 503              		.loc 1 71 9 view .LVU113
- 504 001c 0120     		movs	r0, #1
- 505 001e FFF7FEFF 		bl	HAL_Delay
- 506              	.LVL53:
-  72:Src/lcd.c     ****         i++;
- 507              		.loc 1 72 9 view .LVU114
- 508              		.loc 1 72 10 is_stmt 0 view .LVU115
- 509 0022 0134     		adds	r4, r4, #1
- 510              	.LVL54:
- 511              		.loc 1 72 10 view .LVU116
- 512 0024 E4B2     		uxtb	r4, r4
- 513              	.LVL55:
- 514              		.loc 1 72 10 view .LVU117
- 515 0026 F5E7     		b	.L38
- 516              	.LVL56:
- 517              	.L36:
-  64:Src/lcd.c     ****     }
- 518              		.loc 1 64 9 is_stmt 1 view .LVU118
- 519 0028 C020     		movs	r0, #192
- 520              	.LVL57:
-  64:Src/lcd.c     ****     }
- 521              		.loc 1 64 9 is_stmt 0 view .LVU119
- 522 002a FFF7FEFF 		bl	LCD_SendCmd
- 523              	.LVL58:
-  64:Src/lcd.c     ****     }
- 524              		.loc 1 64 9 view .LVU120
- 525 002e EDE7     		b	.L37
- 526              	.LVL59:
- 527              	.L41:
+ 528              		.loc 1 71 9 view .LVU112
+  71:Src/lcd.c     ****         HAL_Delay(1);
+ 529              		.loc 1 71 26 is_stmt 0 view .LVU113
+ 530 001a 4030     		adds	r0, r0, #64
+ 531              	.LVL55:
+  71:Src/lcd.c     ****         HAL_Delay(1);
+ 532              		.loc 1 71 26 view .LVU114
+ 533 001c 40B2     		sxtb	r0, r0
+  71:Src/lcd.c     ****         HAL_Delay(1);
+ 534              		.loc 1 71 29 view .LVU115
+ 535 001e 60F07F00 		orn	r0, r0, #127
+  71:Src/lcd.c     ****         HAL_Delay(1);
+ 536              		.loc 1 71 9 view .LVU116
+ 537 0022 C0B2     		uxtb	r0, r0
+ 538 0024 FFF7FEFF 		bl	LCD_SendCmd
+ 539              	.LVL56:
+  72:Src/lcd.c     ****         break;
+ 540              		.loc 1 72 9 is_stmt 1 view .LVU117
+ 541 0028 0120     		movs	r0, #1
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 12
+
+
+ 542 002a FFF7FEFF 		bl	HAL_Delay
+ 543              	.LVL57:
   73:Src/lcd.c     ****     }
-  74:Src/lcd.c     **** }...
- 528              		.loc 1 74 1 view .LVU121
- 529 0030 38BD     		pop	{r3, r4, r5, pc}
- 530              		.loc 1 74 1 view .LVU122
- 531              		.cfi_endproc
- 532              	.LFE70:
- 534              		.text
- 535              	.Letext0:
- 536              		.file 2 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\machine\\_default_types.h"
- 537              		.file 3 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\sys\\_stdint.h"
- 538              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
- 539              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
- 540              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
- 541              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
- 542              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
-ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccfx139w.s 			page 12
+ 544              		.loc 1 73 9 view .LVU118
+ 545              		.loc 1 76 1 is_stmt 0 view .LVU119
+ 546 002e EBE7     		b	.L37
+ 547              		.cfi_endproc
+ 548              	.LFE71:
+ 550              		.section	.text.LCD_SendChar,"ax",%progbits
+ 551              		.align	1
+ 552              		.global	LCD_SendChar
+ 553              		.syntax unified
+ 554              		.thumb
+ 555              		.thumb_func
+ 556              		.fpu softvfp
+ 558              	LCD_SendChar:
+ 559              	.LVL58:
+ 560              	.LFB72:
+  77:Src/lcd.c     **** 
+  78:Src/lcd.c     **** void LCD_SendChar(char ch){
+ 561              		.loc 1 78 27 is_stmt 1 view -0
+ 562              		.cfi_startproc
+ 563              		@ args = 0, pretend = 0, frame = 0
+ 564              		@ frame_needed = 0, uses_anonymous_args = 0
+ 565              		.loc 1 78 27 is_stmt 0 view .LVU121
+ 566 0000 08B5     		push	{r3, lr}
+ 567              	.LCFI6:
+ 568              		.cfi_def_cfa_offset 8
+ 569              		.cfi_offset 3, -8
+ 570              		.cfi_offset 14, -4
+  79:Src/lcd.c     ****     
+  80:Src/lcd.c     ****     LCD_SendData((uint8_t)ch);
+ 571              		.loc 1 80 5 is_stmt 1 view .LVU122
+ 572 0002 FFF7FEFF 		bl	LCD_SendData
+ 573              	.LVL59:
+  81:Src/lcd.c     ****     LCD_Delay();
+ 574              		.loc 1 81 5 view .LVU123
+  82:Src/lcd.c     ****     HAL_Delay(1);
+ 575              		.loc 1 82 5 view .LVU124
+ 576 0006 0120     		movs	r0, #1
+ 577 0008 FFF7FEFF 		bl	HAL_Delay
+ 578              	.LVL60:
+  83:Src/lcd.c     ****     
+  84:Src/lcd.c     **** }
+ 579              		.loc 1 84 1 is_stmt 0 view .LVU125
+ 580 000c 08BD     		pop	{r3, pc}
+ 581              		.cfi_endproc
+ 582              	.LFE72:
+ 584              		.section	.text.LCD_SendString,"ax",%progbits
+ 585              		.align	1
+ 586              		.global	LCD_SendString
+ 587              		.syntax unified
+ 588              		.thumb
+ 589              		.thumb_func
+ 590              		.fpu softvfp
+ 592              	LCD_SendString:
+ 593              	.LVL61:
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 13
+
+
+ 594              	.LFB73:
+  85:Src/lcd.c     **** 
+  86:Src/lcd.c     **** void LCD_SendString(char* str){
+ 595              		.loc 1 86 31 is_stmt 1 view -0
+ 596              		.cfi_startproc
+ 597              		@ args = 0, pretend = 0, frame = 0
+ 598              		@ frame_needed = 0, uses_anonymous_args = 0
+ 599              		.loc 1 86 31 is_stmt 0 view .LVU127
+ 600 0000 38B5     		push	{r3, r4, r5, lr}
+ 601              	.LCFI7:
+ 602              		.cfi_def_cfa_offset 16
+ 603              		.cfi_offset 3, -16
+ 604              		.cfi_offset 4, -12
+ 605              		.cfi_offset 5, -8
+ 606              		.cfi_offset 14, -4
+ 607 0002 0546     		mov	r5, r0
+  87:Src/lcd.c     ****     
+  88:Src/lcd.c     ****     uint8_t i=0;
+ 608              		.loc 1 88 5 is_stmt 1 view .LVU128
+ 609              	.LVL62:
+  89:Src/lcd.c     **** 
+  90:Src/lcd.c     ****    // if(StrNum == 0){
+  91:Src/lcd.c     ****     //    LCD_SendCmd(0x80);
+  92:Src/lcd.c     ****    // }else{
+  93:Src/lcd.c     ****     //    LCD_SendCmd(0xC0);
+  94:Src/lcd.c     ****    // }
+  95:Src/lcd.c     ****    // HAL_Delay(1);
+  96:Src/lcd.c     ****     
+  97:Src/lcd.c     ****     while(str[i] != 0){
+ 610              		.loc 1 97 5 view .LVU129
+  88:Src/lcd.c     **** 
+ 611              		.loc 1 88 13 is_stmt 0 view .LVU130
+ 612 0004 0024     		movs	r4, #0
+ 613              	.LVL63:
+ 614              	.L45:
+ 615              		.loc 1 97 14 view .LVU131
+ 616 0006 285D     		ldrb	r0, [r5, r4]	@ zero_extendqisi2
+ 617              		.loc 1 97 10 view .LVU132
+ 618 0008 38B1     		cbz	r0, .L48
+  98:Src/lcd.c     ****         LCD_SendData(str[i]);
+ 619              		.loc 1 98 9 is_stmt 1 view .LVU133
+ 620 000a FFF7FEFF 		bl	LCD_SendData
+ 621              	.LVL64:
+  99:Src/lcd.c     ****         LCD_Delay();
+ 622              		.loc 1 99 9 view .LVU134
+ 100:Src/lcd.c     ****         HAL_Delay(1);
+ 623              		.loc 1 100 9 view .LVU135
+ 624 000e 0120     		movs	r0, #1
+ 625 0010 FFF7FEFF 		bl	HAL_Delay
+ 626              	.LVL65:
+ 101:Src/lcd.c     ****         i++;
+ 627              		.loc 1 101 9 view .LVU136
+ 628              		.loc 1 101 10 is_stmt 0 view .LVU137
+ 629 0014 0134     		adds	r4, r4, #1
+ 630              	.LVL66:
+ 631              		.loc 1 101 10 view .LVU138
+ 632 0016 E4B2     		uxtb	r4, r4
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 14
+
+
+ 633              	.LVL67:
+ 634              		.loc 1 101 10 view .LVU139
+ 635 0018 F5E7     		b	.L45
+ 636              	.L48:
+ 102:Src/lcd.c     ****     }
+ 103:Src/lcd.c     **** }...
+ 637              		.loc 1 103 1 view .LVU140
+ 638 001a 38BD     		pop	{r3, r4, r5, pc}
+ 639              		.loc 1 103 1 view .LVU141
+ 640              		.cfi_endproc
+ 641              	.LFE73:
+ 643              		.text
+ 644              	.Letext0:
+ 645              		.file 2 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\machine\\_default_types.h"
+ 646              		.file 3 "c:\\software\\embededgcc\\arm-gcc\\arm-none-eabi\\include\\sys\\_stdint.h"
+ 647              		.file 4 "Drivers/CMSIS/Include/core_cm3.h"
+ 648              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h"
+ 649              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h"
+ 650              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 651              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ARM GAS  C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 lcd.c
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:16     .text.LCD_Delay:0000000000000000 $t
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:24     .text.LCD_Delay:0000000000000000 LCD_Delay
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:58     .text.LCD_SetData:0000000000000000 $t
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:65     .text.LCD_SetData:0000000000000000 LCD_SetData
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:258    .text.LCD_SetData:00000000000000f4 $d
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:264    .text.LCD_SendCmd:0000000000000000 $t
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:271    .text.LCD_SendCmd:0000000000000000 LCD_SendCmd
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:321    .text.LCD_SendCmd:0000000000000034 $d
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:326    .text.LCD_SendData:0000000000000000 $t
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:333    .text.LCD_SendData:0000000000000000 LCD_SendData
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:383    .text.LCD_SendData:0000000000000034 $d
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:388    .text.LCD_Init:0000000000000000 $t
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:395    .text.LCD_Init:0000000000000000 LCD_Init
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:452    .text.LCD_SendString:0000000000000000 $t
-C:\Users\avpas\AppData\Local\Temp\ccfx139w.s:459    .text.LCD_SendString:0000000000000000 LCD_SendString
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:16     .text.LCD_Delay:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:24     .text.LCD_Delay:0000000000000000 LCD_Delay
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:58     .text.LCD_SetData:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:65     .text.LCD_SetData:0000000000000000 LCD_SetData
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:258    .text.LCD_SetData:00000000000000f4 $d
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:264    .text.LCD_SendCmd:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:271    .text.LCD_SendCmd:0000000000000000 LCD_SendCmd
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:321    .text.LCD_SendCmd:0000000000000034 $d
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:326    .text.LCD_SendData:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:333    .text.LCD_SendData:0000000000000000 LCD_SendData
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:383    .text.LCD_SendData:0000000000000034 $d
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:388    .text.LCD_Init:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:395    .text.LCD_Init:0000000000000000 LCD_Init
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:452    .text.LCD_Clear:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:459    .text.LCD_Clear:0000000000000000 LCD_Clear
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:484    .text.LCD_SetPos:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:491    .text.LCD_SetPos:0000000000000000 LCD_SetPos
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:551    .text.LCD_SendChar:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:558    .text.LCD_SendChar:0000000000000000 LCD_SendChar
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:585    .text.LCD_SendString:0000000000000000 $t
+C:\Users\avpas\AppData\Local\Temp\ccJX0WBY.s:592    .text.LCD_SendString:0000000000000000 LCD_SendString
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

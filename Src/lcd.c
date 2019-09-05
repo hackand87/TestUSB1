@@ -53,19 +53,50 @@ void LCD_Init(void){
     HAL_Delay(2);
 }
 
-void LCD_SendString(uint8_t StrNum, char* str){
+void LCD_Clear(void){
+    LCD_SendCmd(0x01);
+    HAL_Delay(1);
+    
+}
+
+void LCD_SetPos(uint8_t x, uint8_t y){
+    
+    switch (y)
+    {
+    case 0:
+        LCD_SendCmd(x|0x80);
+        HAL_Delay(1);
+        break;
+    case 1:
+        LCD_SendCmd((0x40+x)|0x80);
+        HAL_Delay(1);
+        break;
+    }
+    
+}
+
+void LCD_SendChar(char ch){
+    
+    LCD_SendData((uint8_t)ch);
+    LCD_Delay();
+    HAL_Delay(1);
+    
+}
+
+void LCD_SendString(char* str){
     
     uint8_t i=0;
 
-    if(StrNum == 0){
-        LCD_SendCmd(0x80);
-    }else{
-        LCD_SendCmd(0xC0);
-    }
-    HAL_Delay(1);
+   // if(StrNum == 0){
+    //    LCD_SendCmd(0x80);
+   // }else{
+    //    LCD_SendCmd(0xC0);
+   // }
+   // HAL_Delay(1);
     
     while(str[i] != 0){
         LCD_SendData(str[i]);
+        LCD_Delay();
         HAL_Delay(1);
         i++;
     }
